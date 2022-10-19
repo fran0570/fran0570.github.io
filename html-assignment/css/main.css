@@ -52,41 +52,55 @@ table {
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 5rem;
 }
 
 header, footer {
-    background-color: aquamarine;
+    background-color: #bcd2e7;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .site-title {
     color: royalblue;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 #my-image {
     box-shadow: 0 0 2px 1px;
     color: black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
 }
 
-/* this list style isnt working */
 ul {
     list-style-type: square;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
 }
 
 li:nth-child(odd) {
-    background: palegreen;
+    background: rgb(113, 129, 134);
 }
 
 a:link {
     text-decoration: none;
     background: dimgray;
     border: 3px solid;
-    border-color: chartreuse;
+    border-color: rgb(0, 72, 100);
 }
 
 a:hover {
-    background-color: crimson;
+    background-color: rgb(219, 58, 165);
 }
 
 a:focus {
-    background-color: cornflowerblue;
+    background-color: rgb(37, 74, 141);
 }
