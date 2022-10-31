@@ -57,12 +57,20 @@ html {
 *::after{
     box-sizing: inherit;
 }
+
 body {
     background-color: #aad4cf;
+    /* max-width: 1024px;
+    margin: auto; */
+}
+
+.main-container {
+    background-color: #d4e9e7;
     max-width: 1024px;
     margin: auto;
 }
 
+/* fish1 image and Lone Starfish heading */
 .site-header {
     position: relative;
     /* display: block; */
@@ -71,34 +79,40 @@ body {
     text-align: center;
     color: white;
 }
-
+/* Lone Starfish heading */
 .site-header h1 {
     position: absolute;
     top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
 }
 
-
-
-/* Set Width and Border */
 .navbar {
     position: static;
     background-color: #d4e9e7;
     transform: translate(0%, -20%);
+
+    /* max-width: 600px;
+    margin: 0 auto;
+    border: 2px solid red; */
+    
     
 }
 
 .navbar li {
     display: inline-block;
+    /* width: 25%; */
+    height: 50px;
+    /* float: left; */
     
 }
 
 li a {
     display: inline-block;
-    background-color: blue;
+    /* background-color: blue; */
     width: 338.5px;
-    height: 48px;
+    /* height: 48px; */
     text-decoration: none;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -108,22 +122,51 @@ li a {
     padding: 10px;
 }
 
+/* Life of a Starfish heading */
 h3 {
-    height: 48px;
+    margin: 10px;
+    height: 42px;
     font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #d4e9e7;
+}
+
+#fish2 {
+    float: left;
+    margin: 10px;
+    width: 240px;
+    height: 240px;
+}
+
+p {
+    margin: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d4e9e7;
 }
 
 h4 {
+    margin: 10px;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #d4e9e7;
 }
 
 h5 {
     margin: 10px;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #d4e9e7;
 }
+
+ul.facts {
+    list-style-type: disc;
+    margin: 30px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d4e9e7;
+}
+
 fieldset {
     display: block;
     border-style: solid;
@@ -181,4 +224,18 @@ input[type=button] {
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
+  }
+
+  footer {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #d4e9e7;
+    /* float: left; */
+    /* margin: 10px; */
+    width: 100%;
+    height: 50px;
+  }
+
+  footer p {
+    text-align: right;
   }
