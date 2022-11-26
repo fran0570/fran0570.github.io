@@ -5,13 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Googles Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="css/main.css">
     <title>Final Project</title>
 </head>
 
 <body>
     <div class="header">
         <nav>
-            <!-- insert star image here -->
+            <img src="images/logo.png" alt="Three Star Media Logo image">
+            <!-- Website navigation -->
             <ul>
                 <li>Link 1</li>
                 <li>Link 2</li>
@@ -19,21 +28,30 @@
                 <li>Link 4</li>
                 <li>Link 5</li>
             </ul>
-            <!-- insert search field here -->
+            <!-- Search field -->
+            <form action="search.html" method="post">
+                <label for="search"></label>
+                <input type="text">
+                <input type="button" value="Search">
+            </form>
         </nav>
         <div class="banner">
             <!-- change color of welcome-dark-box in css -->
             <div class="welcome-dark-box">
                 <h1>Welcome to Three Star Media</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore assumenda earum voluptatibus quidem voluptatem, vero porro suscipit, pariatur minus asperiores enim dolores similique magnam!</p>
-                <!-- insert connect with us button here -->
+                <!-- should i use a different name for each button items? -->
+                <!-- should i use a different name for each button items? -->
+                <button class="card-button">Connect with us <i class="fa fa-caret-right"></i></button>
             </div>
         </div>
     </div>
 
     <main class="main-container">
-        <div class="about-us" id="about">
-            <div>
+        
+        <!-- about us segment -->
+        <div>
+            <div class="about-us" id="about">
                 <img src="images/about-us.jpg" alt="ping pong table about us pic">
                 <div>
                     <h2>About Us</h2>
@@ -43,9 +61,145 @@
             </div>
         </div>
 
+        <!-- our services segment -->
+        <div class="our-service" id="services">
+            <!-- do i really need this div that i put in my segments -->
+            <div>
+                <h2>Our Services</h2>
+                <!-- should i use a different name for each card items? -->
+                <!-- should i use a different name for each card container items? -->
+                <div class="card-digital">
+                    <img src="images/digital.jpg" alt="Laptop mobile phone digital Transformation image">
+                    <div class="container1">
+                        <h4>Digital Transformation</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, quo veniam illo dolorem sint voluptates nostrum magnam eius iusto quod quis esse tempora ex aspernatur molestias distinctio consequuntur. </p>
+                        <!-- should i use a different name for each button items? -->
+                        <!-- should i use a different name for each button items? -->
+                        <button class="card-button">Digital Plans <i class="fa fa-caret-right"></i></button>
+                    </div>
+                </div>
+                <div class="card-marketing">
+                    <img src="images/marketing.jpg" alt="Laptop on desk marketing image">
+                    <div class="container2">
+                        <h4>Marketing</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, quo veniam illo dolorem sint voluptates nostrum magnam eius iusto quod quis esse tempora ex aspernatur molestias distinctio consequuntur. </p>
+                        <!-- should i use a different name for each button items? -->
+                        <!-- should i use a different name for each button items? -->
+                        <button class="card-button">Marketing Plans <i class="fa fa-caret-right"></i></button>
+                    </div>
+                </div>
+                <div class="card-video">
+                    <img src="images/video.jpg" alt="Mobile phone video image">
+                    <div class="container3">
+                        <h4>Video Production</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, quo veniam illo dolorem sint voluptates nostrum magnam eius iusto quod quis esse tempora ex aspernatur molestias distinctio consequuntur. </p>
+                        <!-- should i use a different name for each button items? -->
+                        <!-- should i use a different name for each button items? -->
+                        <button class="card-button">Video Plans <i class="fa fa-caret-right"></i></button>
+                    </div>
+                </div>
+                <div class="card-web">
+                    <img src="images/web.jpg" alt="Mobile phone on notepad web image">
+                    <div class="container4">
+                        <h4>Web Development</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, quo veniam illo dolorem sint voluptates nostrum magnam eius iusto quod quis esse tempora ex aspernatur molestias distinctio consequuntur. </p>
+                        <!-- should i use a different name for each button items? -->
+                        <!-- should i use a different name for each button items? -->
+                        <button class="card-button">Web Plans <i class="fa fa-caret-right"></i></button>
+                    </div>
+                </div>
+                <div class="card-print">
+                    <img src="images/print.jpg" alt="News paper stand print image">
+                    <div class="container5">
+                        <h4>Print</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, quo veniam illo dolorem sint voluptates nostrum magnam eius iusto quod quis esse tempora ex aspernatur molestias distinctio consequuntur. </p>
+                        <!-- should i use a different name for each button items? -->
+                        <!-- should i use a different name for each button items? -->
+                        <button class="card-button">Print Plans <i class="fa fa-caret-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- our vision segment -->
+        <div class="vision-banner" id="vision">
+            <div>
+                <h4>Our Vision</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero recusandae totam ad possimus molestiae? Impedit, quia iure dolore delectus illum eveniet architecto, quis, voluptas nesciunt nemo accusamus perferendis illo distinctio!</p>
+                <button class="vision-button">Learn More <i class="fa fa-caret-right"></i></button>
+            </div>
+        </div>
 
+        <!-- our team -->
+        <div class="our-team" id="team">
+            <div>
+                <h4>Our Team</h4>
+                <img src="images/john.jpg" alt="portrait of john image">
+                <div class="john-description">
+                    <h4>John Doe</h4>
+                    <h5>CEO and Co-owner</h5>
+                    <div class="underline"></div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, esse? Dolores a voluptatum assumenda recusandae neque natus aliquam minus aspernatur saepe similique iure cupiditate repellendus cum, ipsam reprehenderit nobis dolorem.</p>
+                </div>
+                <div class="bob-description">
+                    <h4>Bob Rite</h4>
+                    <h5>CFO and Co-owner</h5>
+                    <div class="underline"></div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, esse? Dolores a voluptatum assumenda recusandae neque natus aliquam minus aspernatur saepe similique iure cupiditate repellendus cum, ipsam reprehenderit nobis dolorem.</p>
+                </div>
+                <img src="images/bob.jpg" alt="portrait of bob image">
+            </div>
+        </div>
+
+        <!-- contact us -->
+        <div class="contact-us" id="contact">
+            <div>
+                <h4>Contact Us</h4>
+                <div>
+                    <!-- message form -->
+                    <h4>Send us a message</h4>
+                    <form action="message.html" method="post">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" name="fullname" id="fullname" required>
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" required>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
+                        <input type="button" value="Send">
+                    </form>
+                </div>
+                <div>
+                    <!-- google map -->
+                    <h4>Location</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d717628.8004803625!2d-76.95336227827475!3d45.364202235754085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669231890815!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div>
+                    <!-- open hours table -->
+                    <h4>Hours of operation</h4>
+                    <table>
+                        <tr>
+                            <th>Days</th>
+                            <th>Hours</th>
+                        </tr>
+                        <tr>
+                            <th>Monday - Friday</th>
+                            <th>9 AM - 6 PM</th>
+                        </tr>
+                        <tr>
+                            <th>Saturday - Sunday</th>
+                            <th>Closed</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <!-- Website footer with copyright -->
+    <footer>
+        <p>&copy; Copyright Three Star Media, 2022</p>
+        <p>All images are taken from Unsplash</p>
+    </footer>
 
 </body>
 
