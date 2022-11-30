@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="css/reset.css">
     <!-- Googles Fonts Links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
     <!-- Icon link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Custom Style Sheet -->
@@ -17,27 +20,29 @@
 </head>
 
 <body>
-    <div class="header">
-        <nav>
-            <img src="images/logo.png" alt="Three Star Media Logo image">
-            <!-- Website navigation -->
-            <ul>
-                <li>Link 1</li>
-                <li>Link 2</li>
-                <li>Link 3</li>
-                <li>Link 4</li>
-                <li>Link 5</li>
-            </ul>
-            <!-- Search field -->
-            <form action="search.html" method="post">
-                <label for="search"></label>
-                <input type="text">
-                <input type="button" value="Search">
-            </form>
-        </nav>
+    <div class="header-wrapper">
+        <div class="navigation">
+            <nav>
+                <img src="images/logo.png" alt="Three Star Media Logo image">
+                <!-- Website navigation -->
+                <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                    <li>Link 4</li>
+                    <li>Link 5</li>
+                </ul>
+                <!-- Search field -->
+                <form action="search.html" method="post">
+                    <label for="search"></label>
+                    <input type="text">
+                    <input type="button" value="Search">
+                </form>
+            </nav>
+        </div>
         <div class="banner">
             <!-- Dark box will be created in css -->
-            <div class="welcome-dark-box">
+            <div class="welcome-box">
                 <h1>Welcome to Three Star Media</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore assumenda earum voluptatibus
                     quidem voluptatem, vero porro suscipit, pariatur minus asperiores enim dolores similique magnam!</p>
@@ -46,12 +51,14 @@
         </div>
     </div>
 
-    <main class="main-container">
+    <main class="wrapper-main">
 
         <!-- about us segment -->
-        <div>
+        <div class="wrapper">
             <div class="about-us" id="about">
-                <img src="images/about-us.jpg" alt="ping pong table about us pic">
+                <div class="image">
+                    <img src="images/about-us.jpg" alt="ping pong table about us pic">
+                </div>
                 <div>
                     <h2>About Us</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta quod, maiores, dolore
@@ -65,12 +72,14 @@
         </div>
 
         <!-- our services segment -->
-        <div class="our-service" id="services">
-            <div>
-                <h2>Our Services</h2>
-                <div class="card">
+        <div class="wrapper">
+            <div class="our-services" id="services">
+                <div class="heading">
+                    <h2>Our Services</h2>
+                </div>
+                <div class="card-digital">
                     <img src="images/digital.jpg" alt="Laptop mobile phone digital Transformation image">
-                    <div class="container">
+                    <div class="card-container">
                         <h4>Digital Transformation</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, quo veniam illo dolorem
                             sint voluptates nostrum magnam eius iusto quod quis esse tempora ex aspernatur molestias
@@ -78,9 +87,9 @@
                         <button class="card-button">Digital Plans <i class="fa fa-caret-right"></i></button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card-marketing">
                     <img src="images/marketing.jpg" alt="Laptop on desk marketing image">
-                    <div class="container">
+                    <div class="card-container">
                         <h4>Marketing</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, quo veniam illo dolorem
                             sint voluptates nostrum magnam eius iusto quod quis esse tempora ex aspernatur molestias
@@ -88,9 +97,9 @@
                         <button class="card-button">Marketing Plans <i class="fa fa-caret-right"></i></button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card-video">
                     <img src="images/video.jpg" alt="Mobile phone video image">
-                    <div class="container">
+                    <div class="card-container">
                         <h4>Video Production</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, quo veniam illo dolorem
                             sint voluptates nostrum magnam eius iusto quod quis esse tempora ex aspernatur molestias
@@ -98,9 +107,9 @@
                         <button class="card-button">Video Plans <i class="fa fa-caret-right"></i></button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card-web">
                     <img src="images/web.jpg" alt="Mobile phone on notepad web image">
-                    <div class="container">
+                    <div class="card-container">
                         <h4>Web Development</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, quo veniam illo dolorem
                             sint voluptates nostrum magnam eius iusto quod quis esse tempora ex aspernatur molestias
@@ -108,9 +117,9 @@
                         <button class="card-button">Web Plans <i class="fa fa-caret-right"></i></button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card-print">
                     <img src="images/print.jpg" alt="News paper stand print image">
-                    <div class="container">
+                    <div class="card-container">
                         <h4>Print</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, quo veniam illo dolorem
                             sint voluptates nostrum magnam eius iusto quod quis esse tempora ex aspernatur molestias
@@ -122,8 +131,8 @@
         </div>
 
         <!-- our vision segment -->
-        <div class="vision-banner" id="vision">
-            <div>
+        <div class="wrapper"></div>
+            <div class="vision-banner" id="vision">
                 <h4>Our Vision</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero recusandae totam ad possimus
                     molestiae? Impedit, quia iure dolore delectus illum eveniet architecto, quis, voluptas nesciunt nemo
@@ -133,9 +142,11 @@
         </div>
 
         <!-- our team -->
-        <div class="our-team" id="team">
-            <div>
-                <h4>Our Team</h4>
+        <div class="wrapper">
+            <div class="our-team" id="team">
+                <div class="heading">
+                    <h4>Our Team</h4>
+                </div>
                 <img src="images/john.jpg" alt="portrait of john image">
                 <div class="john-description">
                     <h4>John Doe</h4>
@@ -158,10 +169,12 @@
         </div>
 
         <!-- contact us -->
-        <div class="contact-us" id="contact">
-            <div>
-                <h4>Contact Us</h4>
-                <div>
+        <div class="wrapper">
+            <div class="contact-us" id="contact">
+                <div class="heading">
+                    <h4>Contact Us</h4>
+                </div>
+                <div class="message">
                     <!-- message form -->
                     <h4>Send us a message</h4>
                     <form action="message.html" method="post">
@@ -174,7 +187,7 @@
                         <input type="button" value="Send">
                     </form>
                 </div>
-                <div>
+                <div class="map">
                     <!-- google map -->
                     <h4>Location</h4>
                     <iframe
@@ -182,7 +195,7 @@
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div>
+                <div class="table">
                     <!-- open hours table -->
                     <h4>Hours of operation</h4>
                     <table>
@@ -206,7 +219,7 @@
 
     <!-- Website footer with copyright -->
     <footer>
-        <div class="footer-container">
+        <div class="wrapper">
             <p>&copy; Copyright Three Star Media, 2022</p>
             <p>All images are taken from Unsplash</p>
         </div>

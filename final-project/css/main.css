@@ -1,0 +1,58 @@
+/* ************************************************************* */
+/* Final-Project CSS
+   v1.0
+   License: none (public domain)
+*/
+/* ************************************************************* */
+
+
+/*  first orange div (outter divs) set to correct width
+    width and margin auto for each seciton */
+
+    /* setup everyting for mobile first here */
+
+.body {
+    font-family: 'Open Sans', sans-serif;
+}
+.wrappper {
+    display: block;
+    /* this means grow to no larger then this */
+    max-width: 1200;  
+    margin: auto;
+}
+
+/*  you'll only need one media queury for this project
+    always ad the media queury at the end
+    in the media queuries dont us max width just use min width  
+    avoid absolute positionning*/
+
+@media screen and (min-width: 760px) {
+
+    .our-services {
+        display: grid;
+        grid-template-columns: 6;
+        grid-template-rows: 3;
+        grid-template-areas: 
+        "heading heading heading heading heading heading"
+        "digital digital digital marketing marketing marketing"
+        "video video web web print print";
+    }
+    .heading {
+        grid-area: heading;
+    }
+    .card-digital {
+        grid-area: digital;
+    }
+    .card-marketing {
+        grid-area: marketing;
+    }
+    .card-video {
+        grid-area: video;
+    }
+    .card-web {
+        grid-area: web;
+    }
+    .card-print {
+        grid-area: print;
+    }
+}
