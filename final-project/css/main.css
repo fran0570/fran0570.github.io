@@ -11,15 +11,56 @@
 
     /* setup everyting for mobile first here */
 
-.body {
+body {
     font-family: 'Open Sans', sans-serif;
 }
-.wrappper {
+/* ************************************************************* */
+/* header styling */
+/* ************************************************************* */
+.header-wrappper {
     display: block;
     /* this means grow to no larger then this */
-    max-width: 1200;  
-    margin: auto;
+    /* max-width: 1200px;   */
+    /* margin: auto; */
 }
+/* ************************************************************* */
+/* Naviation bar styling */
+/* ************************************************************* */
+.navigation {
+    /* max-width: 1200px; */
+    /* margin: auto; */
+    padding: 20px;
+    background-color: #222;
+}
+
+nav .image { 
+    /* max-width: 100%; */
+    padding: 20px;
+    /* margin: 20px 20px 0 20px; */
+    background-color: #c78c06;
+}
+
+nav ul li {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #c78c06;
+}
+
+nav ul li:hover {
+    color: black;
+    background-color: #c78c06;
+    /* margin: 0 20px 0 20px; */
+}
+
+/* input []{
+    display: inline-block;
+    width: 100%;
+} */
 
 /*  you'll only need one media queury for this project
     always ad the media queury at the end
