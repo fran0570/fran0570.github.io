@@ -2,7 +2,6 @@
 /* Final-Project CSS */
 /* ************************************************************* */
 
-
 /*  first orange div (outter divs) set to correct width
     width and margin auto for each seciton */
 
@@ -48,24 +47,52 @@ nav ul li a {
     color: #c78c06;
 }
 
-/* nav ul li:hover {
-    color: black;
+nav ul li:hover {
     background-color: #c78c06;
-} */
+}
 
-nav ul li a:hover{
-    color: black;
-    background-color: #c78c06;
+nav ul li:hover > a{
+    color: #222;
     font-size: 1.5rem;
     text-align: center;
     padding: 20px;
     width: auto;
 }
 
-/* input []{
-    display: inline-block;
-    width: 100%;
-} */
+input[type=text] {
+    display: inline;
+    width: 95%;
+    padding: 14px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    color: #222;
+    /* font-size: 1.5rem; */
+
+}
+
+.search-btn {
+    /* display: inline; */
+    /* width: 4%; */
+    background-color: #222;
+    border-color: #c78c06;
+    color: #c78c06;
+    padding: 15px;
+    /* text-align: center; */
+    /* text-decoration: none; */
+    /* display: inline-block; */
+    /* font-size: 16px; */
+}
+.banner {
+    background-image: url(/final-project/images/main-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 1200px 1200px;
+}
+
+h1 {
+    /* color: white; */
+    font-weight: 700;
+    font-size: 6rem;
+}
 
 /*  you'll only need one media queury for this project
     always ad the media queury at the end
