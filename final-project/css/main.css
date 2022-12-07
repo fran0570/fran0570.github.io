@@ -19,6 +19,12 @@ body {
     /* max-width: 1200px;   */
     /* margin: auto; */
 }
+
+
+.main-wrapper {
+    margin: auto;
+    max-width: 1200px;
+}
 /* ************************************************************* */
 /* Naviation bar styling */
 /* ************************************************************* */
@@ -61,7 +67,7 @@ nav ul li:hover > a{
 
 input[type=text] {
     display: inline;
-    width: 95%;
+    width: 80%;
     padding: 14px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -76,7 +82,7 @@ input[type=text] {
     background-color: #222;
     border-color: #c78c06;
     color: #c78c06;
-    padding: 15px;
+    /* padding: 15px; */
     /* text-align: center; */
     /* text-decoration: none; */
     /* display: inline-block; */
@@ -85,13 +91,113 @@ input[type=text] {
 .banner {
     background-image: url(/final-project/images/main-banner.jpg);
     background-repeat: no-repeat;
-    background-size: 1200px 1200px;
+    padding: 100px 0;
+    /* background-size: 1200px 1200px; */
+}
+
+.welcome-box {
+    background-color: rgba(0, 0, 0, 50%);
+    /* margin: 100px 0 100px 0; */
+    padding: 50px 20px;
 }
 
 h1 {
     /* color: white; */
     font-weight: 700;
     font-size: 6rem;
+    color: white;
+}
+
+p {
+    font-weight: 400;
+    color: white;
+    padding: 20px 0 20px 0;
+}
+
+.connect-button {
+    background-color: #c78c06;
+    border: none;
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 1.3rem;
+}
+
+.fa {
+    /* color: black; */
+    font-size: 2.5rem;
+    padding: 10px ;
+}
+
+.wrapper {
+    background-color: #ffe6ac;
+    padding: 20px;
+    margin: auto;
+    max-width: 1200px;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 40px 0;
+}
+.wrapper p {
+    color: black;
+}
+
+.wrapper.services{
+    background-color: white;
+}
+
+/* ************************************************************* */
+/* cards */
+/* ************************************************************* */
+.card {
+    margin: 2px 16px;
+    background-color: #ffe6ac;
+}
+/* .card img{
+    width: 100%;
+} */
+h4 {
+    margin: 20px;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.card p{
+    margin: 0 20px;
+}
+.card-button {
+    font-size: 1.5rem;
+    /* width: 80%; */
+    /* height: 100%; */
+    padding: 20px;
+    margin: 20px;
+    background-color: #222;
+    color: white;
+    border: none;
+}
+
+.wrapper.vision {
+    background-image: url(/final-project/images/vision.jpg);
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+.wrapper.vision h4 {
+    color: white;
+}
+.wrapper.vision p {
+    color: white;
+    
+}
+.wrapper.vision button {
+    font-size: 1.5rem;
+    /* width: 80%; */
+    /* height: 100%; */
+    padding: 20px;
+    margin: 20px;
+    background-color: #222;
+    color: white;
+    border-color: white;
 }
 
 /*  you'll only need one media queury for this project
