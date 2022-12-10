@@ -1,6 +1,15 @@
 /* ************************************************************* */
 /* Final-Project CSS */
 /* ************************************************************* */
+/* personal note:
+   create a vs addon that when you right click on a tag
+   in an html document a option called create css selector is 
+   available and when used will automatically create the 
+   corresponding selector in your linked css document. 
+   If a selector is already created then will point or 
+   direct user toward it. */
+/* ************************************************************* */
+
 
 /*  first orange div (outter divs) set to correct width
     width and margin auto for each seciton */
@@ -8,29 +17,25 @@
     /* setup everyting for mobile first here */
 
 body {
+    display: block;
     font-family: 'Open Sans', sans-serif;
+    margin: auto;
+    max-width: 760px;
 }
 /* ************************************************************* */
 /* header styling */
 /* ************************************************************* */
-.header-wrappper {
-    display: block;
-    /* this means grow to no larger then this */
-    /* max-width: 1200px;   */
-    /* margin: auto; */
-}
-
-
-.main-wrapper {
+/* .header-wrappper {
+    
+    this means grow to no larger then this
+    max-width: 1200px;  
     margin: auto;
-    max-width: 1200px;
-}
+} */
+
 /* ************************************************************* */
 /* Naviation bar styling */
 /* ************************************************************* */
 .navigation {
-    /* max-width: 1200px; */
-    /* margin: auto; */
     padding: 20px;
     background-color: #222;
 }
@@ -65,8 +70,8 @@ nav ul li:hover > a{
     width: auto;
 }
 
-input[type=text] {
-    display: inline;
+.navigation input[type=text] {
+    /* display: inline; */
     width: 80%;
     padding: 14px;
     margin: 8px 0;
@@ -88,6 +93,10 @@ input[type=text] {
     /* display: inline-block; */
     /* font-size: 16px; */
 }
+
+/* ************************************************************* */
+/* welcome banner */
+/* ************************************************************* */
 .banner {
     background-image: url(/final-project/images/main-banner.jpg);
     background-repeat: no-repeat;
@@ -104,7 +113,7 @@ input[type=text] {
 h1 {
     /* color: white; */
     font-weight: 700;
-    font-size: 6rem;
+    font-size: 5rem;
     color: white;
 }
 
@@ -131,14 +140,19 @@ p {
 .wrapper {
     background-color: #ffe6ac;
     padding: 20px;
-    margin: auto;
-    max-width: 1200px;
+    /* margin: auto; */
+    /* max-width: 1200px; */
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 700;
     padding: 40px 0;
+}
+h4 {
+    /* margin: 20px; */
+    font-weight: 700;
+    font-size: 2rem;
 }
 .wrapper p {
     color: black;
@@ -148,17 +162,21 @@ h2 {
     background-color: white;
 }
 
+.image img {
+    max-width: 720px;
+}
+
 /* ************************************************************* */
 /* cards */
 /* ************************************************************* */
 .card {
-    margin: 2px 16px;
+    margin: 20px 16px;
     background-color: #ffe6ac;
 }
-/* .card img{
+.card img{
     width: 100%;
-} */
-h4 {
+}
+.card-container h4 {
     margin: 20px;
     font-weight: 700;
     font-size: 2rem;
@@ -177,10 +195,16 @@ h4 {
     border: none;
 }
 
+/* ************************************************************* */
+/* vision banner */
+/* ************************************************************* */
 .wrapper.vision {
     background-image: url(/final-project/images/vision.jpg);
     background-repeat: no-repeat;
-    padding: 100px 0;
+    /* padding: 100px 0; */
+    margin: 0 0 20px 0;
+    /* max-height: 300px; */
+    background-size: 760px 500px;
 }
 .wrapper.vision h4 {
     color: white;
@@ -194,18 +218,71 @@ h4 {
     /* width: 80%; */
     /* height: 100%; */
     padding: 20px;
-    margin: 20px;
-    background-color: #222;
+    /* margin: 20px; */
+    background-color: rgba(0, 0, 0, 50%);
     color: white;
     border-color: white;
 }
+
+
+/* ************************************************************* */
+/* our team */
+/* ************************************************************* */
+.wrapper.team {
+    background-color: white;
+}
+.our-team img {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.description{
+    background-color: #ffe6ac;
+    margin: 0 0 20px 0;
+    padding: 20px;
+}
+.our-team h5 {
+    margin: 20px 0;
+    font-weight: 700;
+}
+.underline {
+    height: 2px;
+    background-color: #c78c06;
+}
+
+/* ************************************************************* */
+/* contact */
+/* ************************************************************* */
+.wrapper.contact {
+    background-color: white;
+}
+
+.message input[type=text] {
+    /* display: inline; */
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    color: #222;
+    /* font-size: 1.5rem; */
+}
+label {
+    margin: 10px 0;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+  }
+
+
 
 /*  you'll only need one media queury for this project
     always ad the media queury at the end
     in the media queuries dont us max width just use min width  
     avoid absolute positionning*/
 
-@media screen and (min-width: 760px) {
+/* @media screen and (min-width: 760px) {
 
     .our-services {
         display: grid;
@@ -234,4 +311,4 @@ h4 {
     .card-print {
         grid-area: print;
     }
-}
+} */
