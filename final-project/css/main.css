@@ -164,10 +164,6 @@ h4 {
     background-color: white;
 }
 
-.image img {
-    max-width: 720px;
-}
-
 /* ************************************************************* */
 /* cards */
 /* ************************************************************* */
@@ -175,7 +171,7 @@ h4 {
     margin: 20px 16px;
     background-color: #ffe6ac;
 }
-.card img{
+.wrapper.services img{
     width: 100%;
 }
 .card-container h4 {
@@ -235,10 +231,9 @@ h4 {
 }
 .our-team img {
     width: 100%;
-    margin: 0px;
-    padding: 0px;
+    height: 100%;
 }
-.description{
+.description {
     background-color: #ffe6ac;
     margin: 0 0 20px 0;
     padding: 20px;
@@ -351,7 +346,7 @@ iframe {
     nav ul li {
         font-size: 1rem;
     }
-    form {
+    nav form {
         display: flex;
         height: 10px;
         margin: 40px;
@@ -385,41 +380,23 @@ iframe {
         margin: 0 100px 0 10px;
     }
 
+    h4 {
+        font-size: 2rem;
+    }
 
     /* ************************************************************* */
     /* cards */
     /* ************************************************************* */
     .card {
-        width: 90%;
-        margin: 20px 16px;
-        background-color: #ffe6ac;
+        margin: 10px;
     }
-    .card img{
+    .wrapper.services img{
         width: 100%;
     }
-    .card-container h4 {
-        margin: 20px;
-        /* font-weight: 700; */
-        /* font-size: 2rem; */
-    }
-    .card p{
-        margin: 0 20px;
-    }
-    .card-button {
-        font-size: 1.5rem;
-        /* width: 80%; */
-        /* height: 100%; */
-        padding: 20px;
-        margin: 20px;
-        background-color: #222;
-        color: white;
-        border: none;
-    }
-
     .our-services {
         display: grid;
-        grid-template-columns: 6;
-        grid-template-rows: 3;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: .2fr 1.1fr .8fr;
         grid-template-areas: 
         "heading heading heading heading heading heading"
         "digital digital digital marketing marketing marketing"
@@ -443,4 +420,70 @@ iframe {
     .print {
         grid-area: print;
     }
+
+    /* ************************************************************* */
+    /* vision banner */
+    /* ************************************************************* */
+    .wrapper.vision {
+        background-size: 1200px 500px;
+    }
+
+    /* ************************************************************* */
+    /* our team */
+    /* ************************************************************* */
+    .description {
+        margin: 0;
+        padding: 0 20px;
+    }
+    .our-team {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 3fr 3fr;
+        grid-template-areas:
+        "heading heading"
+        "john desc-john"
+        "desc-bob bob";
+    }
+    .heading {
+        grid-area: heading;
+    }
+    .john {
+        grid-area: john;
+    }
+    .description.john {
+        grid-area: desc-john;
+    }
+    .bob {
+        grid-area: bob;
+    }
+    .description.bob {
+        grid-area: desc-bob;
+    }
+    
+    .contact-us {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact-us .heading {
+        order: 1;
+        width: 100%;
+    }
+    .contact-us .message {
+        order: 2;
+        width: 50%;
+        /* padding: 0 5px; */
+        /* flex-basis: calc(50% - 5px); */
+    }
+    .contact-us .table {
+        order: 4;
+        width: 100%;
+    }
+    .contact-us .map {
+        order: 3;
+        width: 50%;
+        /* padding: 0 5px; */
+        /* flex-basis: calc(50% - 5px); */
+    }
+
+
 }
