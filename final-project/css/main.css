@@ -7,7 +7,13 @@
    available and when used will automatically create the 
    corresponding selector in your linked css document. 
    If a selector is already created then will point or 
-   direct user toward it. */
+   direct user toward it. 
+   
+   todo
+   1.add more notes explaining things
+   2.try and fix search button/bar
+   
+   */
 /* ************************************************************* */
 
 
@@ -474,6 +480,9 @@ iframe {
         /* padding: 0 5px; */
         /* flex-basis: calc(50% - 5px); */
     }
+    .message form {
+        padding: 0 10px 0 0;
+    }
     .contact-us .table {
         order: 4;
         width: 100%;
@@ -483,6 +492,12 @@ iframe {
         width: 50%;
         /* padding: 0 5px; */
         /* flex-basis: calc(50% - 5px); */
+    }
+    .map h4 {
+        padding: 0 0 0 5px;
+    }
+    .map iframe {
+        padding: 0 0 0 5px;
     }
 
 
