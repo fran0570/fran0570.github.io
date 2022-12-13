@@ -1,45 +1,24 @@
 /* ************************************************************* */
 /* Final-Project CSS */
 /* ************************************************************* */
-/* personal note:
-   create a vs addon that when you right click on a tag
-   in an html document a option called create css selector is 
-   available and when used will automatically create the 
-   corresponding selector in your linked css document. 
-   If a selector is already created then will point or 
-   direct user toward it. 
-   
-   todo
-   1.add more notes explaining things
-   2.try and fix search button/bar
-   
-   */
+
+/* ************************************************************* */
+/* Mobile first styling
+   Setting up everyting for mobile first */
 /* ************************************************************* */
 
-
-/*  first orange div (outter divs) set to correct width
-    width and margin auto for each seciton */
-
-    /* setup everyting for mobile first here */
-
+/* Main styling set inside the body for entire site 
+   setting the initial width and margin */
 body {
     display: block;
     font-family: 'Open Sans', sans-serif;
     margin: auto;
     max-width: 760px;
 }
-/* ************************************************************* */
-/* header styling */
-/* ************************************************************* */
-/* .header-wrappper {
-    
-    this means grow to no larger then this
-    max-width: 1200px;  
-    margin: auto;
-} */
 
 /* ************************************************************* */
-/* Naviation bar styling */
+/* Navigation Bar Styling
+   Creating one column of buttons with colour change hover state */
 /* ************************************************************* */
 .navigation {
     padding: 20px;
@@ -47,9 +26,7 @@ body {
 }
 
 nav .image { 
-    /* max-width: 100%; */
     padding: 20px;
-    /* margin: 20px 20px 0 20px; */
     background-color: #c78c06;
 }
 
@@ -84,40 +61,28 @@ nav ul li:hover > a{
 }
 
 .search-btn {
-    /* display: inline; */
-    /* width: 10%; */
-    /* box-sizing: border-box; */
-    /* width: 10%; */
-    /* margin: 100px 0 0 0; */
     background-color: #222;
     border-color: #c78c06;
     color: #c78c06;
-    /* height: 50px; */
     padding: 10px;
-    /* text-align: center; */
-    /* text-decoration: none; */
-    /* display: inline-block; */
-    /* font-size: 16px; */
 }
 
 /* ************************************************************* */
-/* welcome banner */
+/* Welcome Banner Styling
+   Use main-banner image as css background */
 /* ************************************************************* */
 .banner {
     background-image: url(/final-project/images/main-banner.jpg);
     background-repeat: no-repeat;
     padding: 100px 0;
-    /* background-size: 1200px 1200px; */
 }
 
 .welcome-box {
     background-color: rgba(0, 0, 0, 50%);
-    /* margin: 100px 0 100px 0; */
     padding: 50px 20px;
 }
 
 h1 {
-    /* color: white; */
     font-weight: 700;
     font-size: 5rem;
     color: white;
@@ -138,17 +103,12 @@ p {
 }
 
 .fa {
-    /* color: black; */
     font-size: 2rem;
-    /* margin: 5px; */
-    /* padding: 10px ; */
 }
 
 .wrapper {
     background-color: #ffe6ac;
     padding: 20px;
-    /* margin: auto; */
-    /* max-width: 1200px; */
 }
 
 h2 {
@@ -156,12 +116,13 @@ h2 {
     font-weight: 700;
     padding: 40px 0;
 }
+
 h4 {
-    /* margin: 20px; */
     font-weight: 700;
     font-size: 2.5rem;
     margin: 20px 0;
 }
+
 .wrapper p {
     color: black;
 }
@@ -171,27 +132,28 @@ h4 {
 }
 
 /* ************************************************************* */
-/* cards */
+/* Cards Styling
+   Setting card div styling, repeats/same for all cards */
 /* ************************************************************* */
 .card {
     margin: 20px 16px;
     background-color: #ffe6ac;
 }
+
 .wrapper.services img{
     width: 100%;
 }
+
 .card-container h4 {
     margin: 20px;
-    /* font-weight: 700; */
-    /* font-size: 2rem; */
 }
+
 .card p{
     margin: 0 20px;
 }
+
 .card-button {
     font-size: 1.5rem;
-    /* width: 80%; */
-    /* height: 100%; */
     padding: 20px;
     margin: 20px;
     background-color: #222;
@@ -200,29 +162,27 @@ h4 {
 }
 
 /* ************************************************************* */
-/* vision banner */
+/* Vision Banner Styling */
 /* ************************************************************* */
 .wrapper.vision {
     background-image: url(/final-project/images/vision.jpg);
     background-repeat: no-repeat;
-    /* padding: 100px 0; */
     margin: 0 0 20px 0;
-    /* max-height: 300px; */
     background-size: 760px 500px;
 }
+
 .wrapper.vision h4 {
     color: white;
 }
+
 .wrapper.vision p {
     color: white;
     
 }
+
 .wrapper.vision button {
     font-size: 1.5rem;
-    /* width: 80%; */
-    /* height: 100%; */
     padding: 20px;
-    /* margin: 20px; */
     background-color: rgba(0, 0, 0, 50%);
     color: white;
     border-color: white;
@@ -230,55 +190,55 @@ h4 {
 
 
 /* ************************************************************* */
-/* our team */
+/* Our Team Styling */
 /* ************************************************************* */
 .wrapper.team {
     background-color: white;
 }
+
 .our-team img {
     width: 100%;
     height: 100%;
 }
+
 .description {
     background-color: #ffe6ac;
     margin: 0 0 20px 0;
     padding: 20px;
 }
+
 .our-team h5 {
-    /* margin: 20px 0 0 0; */
     font-weight: 700;
 }
+
 .underline {
     height: 2px;
     background-color: #c78c06;
 }
 
 /* ************************************************************* */
-/* contact */
+/* Contact Styling */
 /* ************************************************************* */
 .wrapper.contact {
     background-color: white;
 }
 
 .message input[type=text] {
-    /* display: inline; */
     width: 100%;
     padding: 14px;
     margin: 10px 0;
     box-sizing: border-box;
     color: #222;
-    /* font-size: 1.5rem; */
 }
-/* label {
-    margin: 10px 0;
-} */
+
 textarea {
     box-sizing: border-box;
     margin: 10px 0;
     width: 100%;
     height: 150px;
     resize: none;
-  }
+}
+
 .message input[type=button] {
     background-color: #222;
     color: #c78c06;
@@ -287,28 +247,32 @@ textarea {
 }
 
 /* ************************************************************* */
-/* table */
+/* Table Styling */
 /* ************************************************************* */
-table{
+table {
     width: 100%;
     border: 1px solid;
 }
+
 th {
     border: 1px solid;
     padding: 20px;
 }
+
 tr:nth-child(1) {
     background-color: #ffe6ac;
 }
+
 tr:nth-child(2) {
     text-align: left;
 }
+
 tr:nth-child(3) {
     text-align: left;
 }
 
 /* ************************************************************* */
-/* location */
+/* Location Styling */
 /* ************************************************************* */
 iframe {
     width: 100%;
@@ -317,14 +281,18 @@ iframe {
 .wrapper.footer {
     background-color: #222;
 }
+
 .wrapper.footer p {
     color: #c78c06;
 }
 
-/*  you'll only need one media queury for this project
-    always ad the media queury at the end
-    in the media queuries dont us max width just use min width  
-    avoid absolute positionning*/
+/* ************************************************************* */
+/* Media Query 
+   Used for desktop/web, you'll only need one media query 
+   for this project. Always ad the media query at the end of 
+   project we dont need to us max width just min width  
+   avoid absolute positionning */
+/* ************************************************************* */
 
  @media screen and (min-width: 760px) {
 
@@ -333,7 +301,10 @@ iframe {
     }
 
     /* ************************************************************* */
-    /* Naviation bar styling */
+    /* Naviation Re-styling 
+       Use flex for re-organizing horizontally the  nav elements: 
+       logo, list, search bar and search button. Also flex on the 
+       about us element desktop web */
     /* ************************************************************* */
     nav {
         display: flex;
@@ -343,24 +314,29 @@ iframe {
         background-color: #222;
         margin: 0 0 0 70px;
     }
+
     nav ul {
         display: flex;
         text-align: center;
         padding: 20px;
         margin: 20px;
     }
+    
     nav ul li {
         font-size: 1rem;
     }
+    
     nav form {
         display: flex;
         height: 10px;
         margin: 40px;
     }
+    
     .search-btn {
         margin: 10px;
         height: 40px;
     }   
+    
     nav ul li:hover > a{
         font-size: 1rem;
         padding: 0px;
@@ -373,15 +349,18 @@ iframe {
     .about-us {
         display: flex;
     }
+    
     .about-us img {
         max-width: 400px;
         height: 250px;
         margin: 0 0 0 100px;
     }
+    
     .about-us h2 {
         padding: 0px;
         margin: 0 10px;
     }
+    
     .about-us p {
         margin: 0 100px 0 10px;
     }
@@ -391,14 +370,17 @@ iframe {
     }
 
     /* ************************************************************* */
-    /* cards */
+    /* Cards Re-styling
+       Use grid to position card divs */
     /* ************************************************************* */
     .card {
         margin: 10px;
     }
+    
     .wrapper.services img{
         width: 100%;
     }
+    
     .our-services {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
@@ -408,39 +390,47 @@ iframe {
         "digital digital digital marketing marketing marketing"
         "video video web web print print";
     }
+    
     .heading {
         grid-area: heading;
     }
+    
     .digital {
         grid-area: digital;
     }
+    
     .marketing {
         grid-area: marketing;
     }
+    
     .video {
         grid-area: video;
     }
+    
     .web {
         grid-area: web;
     }
+    
     .print {
         grid-area: print;
     }
 
     /* ************************************************************* */
-    /* vision banner */
+    /* Vision Banner Re-sizing */
     /* ************************************************************* */
     .wrapper.vision {
         background-size: 1200px 500px;
     }
 
     /* ************************************************************* */
-    /* our team */
+    /* Our Team Re-styling
+       Use grid to create 4 quadrans to divide each element into */
     /* ************************************************************* */
     .description {
         margin: 0;
         padding: 0 20px;
     }
+    
     .our-team {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -450,52 +440,64 @@ iframe {
         "john desc-john"
         "desc-bob bob";
     }
+    
     .heading {
         grid-area: heading;
     }
+    
     .john {
         grid-area: john;
     }
+    
     .description.john {
         grid-area: desc-john;
     }
+    
     .bob {
         grid-area: bob;
     }
+    
     .description.bob {
         grid-area: desc-bob;
     }
     
+    /* ************************************************************* */
+    /* Contact Us Re-styling
+       Split/divide section into 2 half using flex */
+    /* ************************************************************* */
     .contact-us {
         display: flex;
         flex-wrap: wrap;
     }
+    
     .contact-us .heading {
         order: 1;
         width: 100%;
     }
+    
     .contact-us .message {
         order: 2;
         width: 50%;
-        /* padding: 0 5px; */
-        /* flex-basis: calc(50% - 5px); */
     }
+
     .message form {
         padding: 0 10px 0 0;
     }
+    
     .contact-us .table {
         order: 4;
         width: 100%;
     }
+    
     .contact-us .map {
         order: 3;
         width: 50%;
-        /* padding: 0 5px; */
-        /* flex-basis: calc(50% - 5px); */
     }
+    
     .map h4 {
         padding: 0 0 0 5px;
     }
+    
     .map iframe {
         padding: 0 0 0 5px;
     }
