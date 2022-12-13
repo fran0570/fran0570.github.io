@@ -4,7 +4,10 @@
 
 /* ************************************************************* */
 /* Mobile first styling
-   Setting up everyting for mobile first */
+   Setting up everyting for mobile first
+   Colours values used #c78c06, #ffe6ac, #222 and white
+   No inline styles are used in the CSS
+   */
 /* ************************************************************* */
 
 /* Main styling set inside the body for entire site 
@@ -293,9 +296,9 @@ iframe {
    project we dont need to us max width just min width  
    avoid absolute positionning */
 /* ************************************************************* */
-
  @media screen and (min-width: 760px) {
 
+    /* maximum width of the container is 1200px */
     body {
         max-width: 1200px;
     }
@@ -336,7 +339,9 @@ iframe {
         margin: 10px;
         height: 40px;
     }   
-    
+    .fa.fa-search {
+        font-size: 1rem;
+    }
     nav ul li:hover > a{
         font-size: 1rem;
         padding: 0px;
