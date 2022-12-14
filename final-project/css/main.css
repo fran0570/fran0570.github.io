@@ -48,7 +48,7 @@ nav ul li:hover {
     background-color: #c78c06;
 }
 
-nav ul li:hover > a{
+nav ul li:hover > a {
     color: #222;
     font-size: 1.5rem;
     text-align: center;
@@ -130,7 +130,7 @@ h4 {
     color: black;
 }
 
-.wrapper.services{
+.wrapper.services {
     background-color: white;
 }
 
@@ -143,7 +143,7 @@ h4 {
     background-color: #ffe6ac;
 }
 
-.wrapper.services img{
+.wrapper.services img {
     width: 100%;
 }
 
@@ -151,7 +151,7 @@ h4 {
     margin: 20px;
 }
 
-.card p{
+.card p {
     margin: 0 20px;
 }
 
@@ -305,9 +305,9 @@ iframe {
 
     /* ************************************************************* */
     /* Naviation Re-styling 
-       Use flex for re-organizing horizontally the  nav elements: 
-       logo, list, search bar and search button. Also flex on the 
-       about us element desktop web */
+       Use flexbox layout for re-organizing horizontally the nav elements: 
+       logo, list, search bar and search button. Also flexbox on the 
+       about us element */
     /* ************************************************************* */
     nav {
         display: flex;
@@ -338,10 +338,12 @@ iframe {
     .search-btn {
         margin: 10px;
         height: 40px;
-    }   
+    }  
+
     .fa.fa-search {
         font-size: 1rem;
     }
+    
     nav ul li:hover > a{
         font-size: 1rem;
         padding: 0px;
@@ -382,7 +384,7 @@ iframe {
         margin: 10px;
     }
     
-    .wrapper.services img{
+    .wrapper.services img {
         width: 100%;
     }
     
@@ -429,7 +431,7 @@ iframe {
 
     /* ************************************************************* */
     /* Our Team Re-styling
-       Use grid to create 4 quadrans to divide each element into */
+       Use grid to create 4 quadrants to divide each element into */
     /* ************************************************************* */
     .description {
         margin: 0;
@@ -468,7 +470,7 @@ iframe {
     
     /* ************************************************************* */
     /* Contact Us Re-styling
-       Split/divide section into 2 half using flex */
+       Split/divide section into 2 half using flexbox */
     /* ************************************************************* */
     .contact-us {
         display: flex;
@@ -506,6 +508,5 @@ iframe {
     .map iframe {
         padding: 0 0 0 5px;
     }
-
 
 }
